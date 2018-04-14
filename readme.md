@@ -1,5 +1,12 @@
 # Repository Design Pattern in Laravel
-Repository design pattern tương tác với bảng Keyword trong database
+Repository design pattern tương tác với bảng Keyword trong database.
+
+## Cài đặt
+Sử dụng Fractal để xuất dữ liệu từ database sang view theo định dạng mong muốn
+
+```
+$ composer require league/fractal
+```
 
 Các hàm public của repository
 
