@@ -1,3 +1,6 @@
+# Repository Design Pattern in Laravel
+Repository design pattern tương tác với bảng Keyword trong database
+
 Các hàm public của repository
 
 ```
@@ -10,13 +13,3 @@ $keyword_repository->improve($old_keyword, $new_keyword, $source = 'manual', $tr
 // Lấy ra danh sách
 $keyword_repository->list($where, $page = 1; $limit = 10);
 ```
-
-`$where` dạng array, xem định dạng `$where` hỗ trợ bởi [builder](https://github.com/laravel/framework/blob/5.5/src/Illuminate/Database/Eloquent/Builder.php#L219)
-
-**ví dụ:**
-
-```
-$where = [
-    ['trust', ">", 1],
-    ['trust', "<", 5]
-];
