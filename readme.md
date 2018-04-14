@@ -8,6 +8,8 @@ Sử dụng Fractal để xuất dữ liệu từ database sang view theo địn
 $ composer require league/fractal
 ```
 
+## Sử dụng
+
 Các hàm public của repository
 
 ```
